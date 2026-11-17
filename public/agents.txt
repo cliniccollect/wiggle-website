@@ -1,0 +1,38 @@
+# Wiggle
+
+> Wiggle is a point-of-sale and payment platform for veterinary clinics. Clinic staff use it to take payments in the clinic and online, and pet owners use it to pay their bills.
+
+Wiggle is made by Wiggle Technology Inc. Website: https://wiggle.vet
+
+## Who it is for
+
+- Veterinary clinics and hospitals, both small animal and equine.
+- Clinic staff: front desk, practice managers and veterinarians.
+- Pet owners, who are the clinic's clients and pay through Wiggle.
+
+## What it does
+
+- Card payments in the clinic on payment terminals.
+- Integrates with the clinic's practice management system (PIMS) for one-click checkout. Payments post back to the PIMS automatically.
+- Payment links sent to clients by text message or email, so clients can pay from their phone.
+- Online bill pay, so pet owners can pay their clinic balance online at any time.
+- Saved cards on file, stored as secure tokens with the client's consent. Wiggle never stores card numbers.
+- Reports for clinics: daily summaries, deposits and settlements.
+- Clinic branding on the pages that clients see.
+
+## Links
+
+- Home: https://wiggle.vet
+- Staff sign-in: https://app.wiggle.vet
+- Terms of Service: https://wiggle.vet/legal/Terms_of_Service_Feb_16_2026.txt
+- Privacy Policy: https://wiggle.vet/legal/Privacy_Policy_Feb_16_2026.txt
+
+## Contact
+
+- Support and sales questions: support@wiggle.vet
+
+## Notes for agents
+
+- Wiggle does not have a public API for third parties at this time.
+- Do not send card numbers, passwords or medical records to support@wiggle.vet.
+- For questions about a specific bill, pet owners should contact their veterinary clinic.

@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getPrivacyPolicy, getTermsOfService } from '../services/legalContent';
+import LoadingBar from '../components/LoadingBar';
+import SiteFooter from '../components/SiteFooter';
+import ThemeToggle from '../components/ThemeToggle';
+import { useTheme } from '../theme/useTheme';
 
 function Legal() {
   const [activeTab, setActiveTab] = useState<'privacy' | 'terms'>('terms');
@@ -8,6 +12,7 @@ function Legal() {
   const [termsText, setTermsText] = useState<string>('');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { isDark, toggle } = useTheme();
 
   useEffect(() => {
     const loadContent = async () => {
@@ -32,9 +37,13 @@ function Legal() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white font-sofia flex flex-col">
+    <div className="relative min-h-screen font-sofia flex flex-col">
+      {isLoading ? <LoadingBar /> : null}
+      <div className="absolute left-4 top-4 z-10 sm:left-6 sm:top-6">
+        <ThemeToggle isDark={isDark} onToggle={toggle} />
+      </div>
       <div className="flex-1">
-        <div className="container mx-auto px-4 sm:px-6 py-8 max-w-4xl">
+        <div className="container mx-auto px-4 sm:px-6 pt-20 pb-8 sm:pt-8 max-w-4xl">
           <div className="mb-8 flex justify-center">
             <Link to="/" className="hover:opacity-80 transition-opacity">
               <span
@@ -42,7 +51,7 @@ function Legal() {
                 className="relative block h-14 w-[184px] overflow-hidden sm:h-16 sm:w-[210px]"
               >
                 <img
-                  src="/wiggle-logo-drawn-light.png"
+                  src="/wiggle-logo.png"
                   alt=""
                   className="absolute max-w-none"
                   style={{
@@ -56,14 +65,14 @@ function Legal() {
             </Link>
           </div>
 
-          <div className="border-b border-gray-200 mb-8">
+          <div className="border-b border-gray-200 dark:border-[hsl(0,0%,20%)] mb-8">
             <div className="flex gap-8">
               <button
                 onClick={() => setActiveTab('terms')}
                 className={`pb-4 px-2 font-semibold text-base transition-colors ${
                   activeTab === 'terms'
                     ? 'text-brand-blue border-b-2 border-brand-blue'
-                    : 'text-gray-600 border-b-2 border-transparent hover:text-gray-900'
+                    : 'text-gray-600 border-b-2 border-transparent hover:text-gray-900 dark:text-[hsl(0,0%,74%)] dark:hover:text-white'
                 }`}
               >
                 Terms of Service
@@ -73,7 +82,7 @@ function Legal() {
                 className={`pb-4 px-2 font-semibold text-base transition-colors ${
                   activeTab === 'privacy'
                     ? 'text-brand-blue border-b-2 border-brand-blue'
-                    : 'text-gray-600 border-b-2 border-transparent hover:text-gray-900'
+                    : 'text-gray-600 border-b-2 border-transparent hover:text-gray-900 dark:text-[hsl(0,0%,74%)] dark:hover:text-white'
                 }`}
               >
                 Privacy Policy
@@ -81,18 +90,14 @@ function Legal() {
             </div>
           </div>
 
-          <div className="bg-white">
-            {isLoading ? (
-              <div className="flex items-center justify-center py-16">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-blue"></div>
-              </div>
-            ) : error ? (
-              <div className="bg-red-50 border border-red-200 rounded p-6">
-                <p className="text-red-700 font-semibold">Error loading document</p>
-                <p className="text-red-600 text-sm mt-1">{error}</p>
+          <div>
+            {isLoading ? null : error ? (
+              <div className="bg-red-50 border border-red-200 rounded p-6 dark:bg-red-950/40 dark:border-red-900">
+                <p className="text-red-700 font-semibold dark:text-red-300">Error loading document</p>
+                <p className="text-red-600 text-sm mt-1 dark:text-red-400">{error}</p>
               </div>
             ) : (
-              <div className="text-gray-700 whitespace-pre-wrap text-sm leading-relaxed prose prose-sm max-w-none">
+              <div className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap text-sm leading-relaxed prose prose-sm max-w-none">
                 {activeTab === 'privacy' ? privacyText : termsText}
               </div>
             )}
@@ -100,15 +105,7 @@ function Legal() {
         </div>
       </div>
 
-      <footer className="bg-gray-900 text-white py-12 mt-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Wiggle Technology Inc. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter showLegalLink={false} />
     </div>
   );
 }

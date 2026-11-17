@@ -1,0 +1,91 @@
+Wiggle Terms of Service
+Last Updated: February 16, 2026
+
+These Wiggle Terms of Service (the “TOS”) constitute a binding legal agreement between Wiggle Technology Inc., a Delaware corporation, dba Wiggle, with its principal place of business at 1264 W 320 N, Provo, UT 84601 (“Wiggle”), and the veterinary clinic and its authorized staff that accepts these TOS by creating an account, clicking “I Agree,” or using the Wiggle point-of-sale and payment platform (the “Services”) (such veterinary clinic and its staff collectively referred to as “Clinic”). Clinic and Wiggle are each referred to as a “Party” and collectively as the “Parties.”
+
+1. Definitions
+* “Affiliate” means an entity that directly or indirectly controls, is controlled by, or is under common control with a Party, where “control” means ownership of greater than fifty percent (50%) of the voting power to elect directors or equivalent ownership interest.
+* “Aggregated Statistics” means data derived from Clinic’s use of the Services that is anonymized and aggregated, used by Wiggle to improve the Services and for analytics.
+* “Customer” means a pet owner or client of Clinic who interacts with the Services, including via SMS, payment links, or the Client Portal.
+* “Customer Data” means all electronic data submitted by or on behalf of Clinic or Customer in the Services, excluding Excluded Information and Aggregated Statistics.
+* “Excluded Information” means full payment card numbers (including CVV), social security numbers, human protected health information (HIPAA).
+* “Hardware” means payment terminals or similar devices used with the Services, whether purchased, subsidized, or leased.
+* “Order Form” means any ordering document executed by the Parties for Services, Hardware, or Professional Services.
+* “Payment Processor” means the third-party payment processing company (or companies) integrated with the Services. The identity of the Payment Processor(s) may change at Wiggle’s sole discretion.
+* “Payment Processing Agreement” or “PPA” means the separate merchant services agreement between Clinic and the Payment Processor governing payment processing, fees, chargebacks, compliance, and hardware.
+
+2. Subscription Services, Professional Services, Software and Hardware
+Wiggle, directly or through an Affiliate, will provide Clinic with access to the Services and, if applicable, Hardware in accordance with this Agreement and any Order Form. For purposes of any Order Form executed by the Parties, the term “Wiggle” as used throughout this Agreement shall mean the Wiggle Affiliate that has executed such Order Form. Wiggle may modify the Services and Software periodically. Wiggle may contract with third parties to assist in providing the Professional Services, including data center hosting, remote backup and specialty data services, so long as they are subject to obligations of confidentiality to Wiggle at least as strict as Wiggle’s to Clinic. Wiggle shall remain responsible for the performance of its contractors.
+
+Clinic is granted a limited, non-exclusive, non-transferable, revocable license during the Term to use the Services and Software solely to process and store information related to Clinic’s veterinary practice for its own internal business purposes, subject to and in compliance with applicable law, and for no other purposes. Clinic is responsible and liable for all use of the Services and Software, including all access provided by or through Clinic. In using the Services and Software, Clinic may not, and may not permit any third party to, access or use the Services or Software in any manner that violates applicable law, infringes any third-party rights, or constitutes a breach of this Agreement. Clinic shall not, and shall not permit any third party to, reverse engineer, decompile, disassemble, or otherwise attempt to derive source code from any Services or Software or otherwise reduce the Services or Software to human-perceivable form. Clinic shall not use the Services or Software to build a competitive product, software or service. Wiggle reserves all rights not expressly granted to Clinic in this Agreement.
+
+Ownership. Wiggle retains all rights in the Services and subject to the license granted to Clinic, the Aggregated Statistics, all work product from related Professional Services, which Clinic may use only for its own internal business purposes, and all intellectual property rights therein. Wiggle may use and incorporate into the Services and Software any changes suggested by Clinic’s personnel, without payment or attribution.
+
+Suspension. Notwithstanding anything to the contrary in this Agreement, Wiggle may temporarily suspend Clinic’s and any Authorized User’s access to any portion or all of the Services and/or Software if (i) Wiggle reasonably determines that (A) there is a threat, attack, or security risk to any of the Services or Software, (B) Clinic’s or any Authorized User’s use of the Services and/or Software disrupts or poses a security risk to the Services and/or Software or to any other customer or vendor of Wiggle, (C) Clinic or any Authorized User is using the Services and/or Software for fraudulent or illegal activities, (D) subject to applicable law, Clinic has ceased to continue its business in the ordinary course, made an assignment for the benefit of creditors or similar disposition of its assets, or become the subject of any bankruptcy, reorganization, liquidation, dissolution or similar proceeding, or (E) Wiggle’s provision of the Services and/or Software to Clinic or any Authorized User is prohibited by applicable law; or (ii) any vendor of Wiggle has suspended or terminated Wiggle’s access to or use of any third-party services or products required to enable Wiggle to provide the Services and/or Software to Clinic (each such suspension, a “Service Suspension”). Wiggle will have no liability for any damage, liabilities, losses (including any loss of data or profits), or any other consequences that Clinic or any Authorized User may incur as a result of a Service Suspension.
+
+Hardware. In consideration of the complete payment by Clinic to Wiggle of the applicable fees for any Hardware as may be specified in an Order Form, Wiggle shall sell such Hardware to Clinic. Title to and risk of loss for such Hardware shall pass to Clinic upon delivery to Clinic’s designated location. Clinic shall be responsible for all shipping, handling, and installation costs unless otherwise agreed in writing.
+
+AI Invoicing & Treatment Plan Uploads. Clinic may upload treatment plans for extraction (which may be done with AI). Clinic represents that no medical data, card data, or other Excluded Information is included in uploads and shall indemnify Wiggle for any claims arising from uploaded content.
+
+3. Payment Processing
+All payment processing is performed exclusively by one or more Payment Processor(s), each of which is PCI DSS Level 1 compliant. Wiggle does not store, process, or transmit full payment card numbers. Clinic must execute and comply with a separate Payment Processing Agreement (PPA) directly with each applicable Payment Processor. Wiggle is not a party to any PPA and has no liability for payment processing, chargebacks, interchange, fees, compliance with Card Brand Rules, or hardware. Clinic is solely responsible for all chargebacks, fees, disputes, and obligations under each PPA.
+
+Wiggle may immediately suspend or terminate Clinic’s access to payment features if any Payment Processor suspends or terminates Clinic’s merchant account.
+
+4. Card on File and Consent
+When a Customer consents to store a payment method, Wiggle collects and securely stores a token, not the full card number. As part of fraud prevention and consent verification, Wiggle logs the Customer’s IP address at the time of consent. This IP address may be provided to Clinic upon request for audit or dispute resolution purposes. Clinic agrees not to use this data for any purpose other than verifying consent or resolving disputes. Clinic is solely responsible for ensuring that all consents obtained through the Services comply with applicable Card Brand Rules and law. Wiggle provides consent capture tools as a convenience only and disclaims all liability for any non-compliance, chargebacks, or disputes arising from Clinic’s use or misuse of such tools.
+
+5. SMS and Email Communications
+Wiggle sends one-time transactional SMS notifications, such as receipt links, only after verbal consent is obtained and logged by Clinic staff with a timestamp, user ID, and purpose. Customers may opt out by replying STOP, END, CANCEL, QUIT, UNSUBSCRIBE, or REVOKE, which will be automatically processed to stop future messages and send a confirmation. All emails are sent through a third-party email service provider, and any marketing emails, if sent in the future, will include an unsubscribe link in compliance with CAN-SPAM.
+
+6. Notes Field
+The “Notes” field is provided for internal Clinic use only. Clinic is solely responsible for all content entered into the Notes field. Wiggle is not liable for any violation of Card Brand Rules, privacy laws, or medical regulations arising from data entered into the Notes field. Clinic agrees to indemnify Wiggle for any claims, fines, or losses related to Notes content.
+
+7. Hardware
+Wiggle may, at its sole discretion, provide Hardware to the Clinic at no upfront cost. Title to such hardware passes to the Clinic upon delivery. Wiggle is not liable for hardware performance or defects.
+
+8. Fees and Payment
+There are currently no monthly software fees charged by Wiggle for use of the Services. However, Clinic will be separately billed by each Payment Processor under the applicable PPA for all payment processing fees, including but not limited to discount rates, transaction fees, monthly minimums, PCI compliance fees, chargeback fees, and hardware costs (if any). Wiggle may, at its sole discretion, subsidize or absorb certain fees charged by the Payment Processor, but Clinic remains ultimately responsible for all amounts due under the PPA.
+
+9. Term and Termination
+This Agreement commences on the date Clinic first uses the Services and continues on a month-to-month basis, automatically renewing unless terminated. Either Party may terminate this Agreement at any time with thirty (30) days’ written notice.
+
+Termination of this Agreement does not terminate any Payment Processing Agreement (PPA). Each PPA is a separate contract between Clinic and the Payment Processor and remains in full force according to its own terms, including any initial term, early termination fees (ETFs), or hardware return obligations. Clinic remains fully responsible for all obligations under each PPA, including any ETFs, even if this Agreement is terminated.
+
+10. Data Ownership and Privacy
+Clinic owns its Customer Data, excluding Aggregated Statistics. Wiggle owns all Aggregated Statistics, all intellectual property in the Services, and any future AI models trained on anonymized data. The Wiggle Privacy Policy is incorporated by reference and governs all data practices.
+
+11. Representations and Warranties
+Clinic represents and warrants that it is a licensed veterinary practice, that it will not submit Excluded Information, that it will comply with all applicable laws and Card Brand Rules, and that it will obtain all necessary consents from Customers.
+
+12. Indemnification
+Clinic shall defend, indemnify, and hold harmless Wiggle, its Affiliates, and their respective officers, directors, and employees from and against any and all claims, damages, losses, liabilities, fines, assessments, costs, and expenses (including reasonable attorneys’ fees) arising from or related to:
+* chargebacks, TCPA violations, medical errors, Notes field content, or breach of this Agreement or Card Brand Rules;
+* Clinic’s breach of PCI DSS requirements, including but not limited to storage of full card numbers, CVV, magnetic stripe data, or any Excluded Information in the Services (including the “Notes” field);
+* Any PCI DSS non-compliance assessment, forensic investigation, card brand fine, or data breach remediation cost imposed on Wiggle due to Clinic’s actions, omissions, or misuse of the Services;
+* Any claim that Clinic’s use of the Services caused Wiggle to fall out of PCI DSS compliance scope or triggered a Reportable Event under PCI DSS;
+* Any claims, fines, fees, or losses imposed by any Payment Processor, Card Brand, or third party arising from Clinic’s transactions, chargebacks, fraud, non-compliance with Card Brand Rules, or breach of any PPA.
+Wiggle shall defend Clinic against third-party claims that the Services infringe intellectual property rights, provided such claim is not due to Clinic’s misuse or modification of the Services.
+
+13. Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, WIGGLE’S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL NOT EXCEED THE GREATER OF (A) THE TOTAL FEES PAID BY CLINIC TO WIGGLE IN THE TWELVE (12) MONTHS PRIOR TO THE CLAIM OR (B) ONE THOUSAND DOLLARS ($1,000), WHICHEVER IS HIGHER. IN NO EVENT SHALL WIGGLE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA, OR BUSINESS INTERRUPTION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WIGGLE IS NOT LIABLE FOR THE ACTS OR OMISSIONS OF THIRD PARTIES, INCLUDING THE PAYMENT PROCESSOR OR EMAIL SERVICE PROVIDER.
+
+14. Dispute Resolution
+This Agreement shall be governed by the laws of the State of Delaware, without regard to conflict of law principles. Any dispute arising out of or relating to this Agreement shall be resolved by binding arbitration in Wilmington, Delaware, under the Commercial Arbitration Rules of the American Arbitration Association. There shall be no class actions. Each Party shall bear its own costs. Wiggle may seek injunctive relief in any court of competent jurisdiction for misuse of its intellectual property or data.
+
+15. General Provisions
+This Agreement, together with the Privacy Policy and any Hardware Schedule, constitutes the entire agreement between the Parties and supersedes all prior agreements. Wiggle may update these TOS at any time by posting the revised version at wiggle.vet/legal. Material changes will be communicated to Clinic via email or in-app notice at least thirty (30) days before the effective date. Clinic’s continued use of the Services after the effective date constitutes acceptance of the updated TOS. Updates will not apply retroactively to claims that arose before the update. If Clinic does not agree, it may terminate this Agreement with thirty (30) days’ notice before the update takes effect. If any provision is held invalid, the remainder shall continue in full force and effect. Wiggle may assign this Agreement; Clinic may not. Neither Party shall be liable for failure to perform due to causes beyond its reasonable control.
+
+Payment Processing Agreement Controls. In the event of any conflict between this Agreement and any Payment Processing Agreement (PPA) with respect to payment processing, fees, chargebacks, hardware, compliance, or termination, the PPA shall control. Clinic acknowledges that Wiggle has no authority to modify, waive, or override any term of a PPA.
+
+Succession. Any successor owner or principal of Clinic shall be bound by this Agreement upon assuming control of Clinic's operations. Clinic shall promptly notify Wiggle of any change in ownership or principal and ensure the new principal acknowledges this Agreement in writing.
+
+The following sections survive termination: 1, 3, 4, 6, 7, 10, 11, 12, 13, 14, and 15.
+
+ACCEPTANCE
+By using the Services, Clinic agrees to be bound by these TOS.
+
+Wiggle
+Wiggle Technology Inc.
+1264 W 320 N, Provo, UT 84601
+support@wiggle.vet

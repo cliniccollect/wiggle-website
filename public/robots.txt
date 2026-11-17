@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# A short description of Wiggle for AI tools: https://wiggle.vet/llms.txt

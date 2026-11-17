@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getPrivacyPolicy, getTermsOfService } from '../services/legalContent';
 import LoadingBar from '../components/LoadingBar';
+import LegalDocument from '../components/LegalDocument';
 import SiteFooter from '../components/SiteFooter';
 import ThemeToggle from '../components/ThemeToggle';
 import { useTheme } from '../theme/useTheme';
@@ -51,7 +52,7 @@ function Legal() {
         <ThemeToggle isDark={isDark} onToggle={toggle} />
       </div>
       <div className="flex-1">
-        <div className="container mx-auto px-4 sm:px-6 pt-20 pb-8 sm:pt-8 max-w-4xl">
+        <div className="mx-auto w-full max-w-3xl px-4 pt-20 pb-8 sm:px-6 sm:pt-8">
           <div className="mb-8 flex justify-center">
             <Link to="/" className="hover:opacity-80 transition-opacity">
               <span
@@ -73,8 +74,8 @@ function Legal() {
             </Link>
           </div>
 
-          <div className="border-b border-gray-200 dark:border-[hsl(0,0%,20%)] mb-8">
-            <div className="flex gap-8">
+          <div className="border-b border-gray-200 dark:border-[hsl(0,0%,20%)] mb-6 sm:mb-8">
+            <div className="flex justify-center gap-6 sm:justify-start sm:gap-8">
               <button
                 onClick={() => setActiveTab('terms')}
                 className={`pb-4 px-2 font-semibold text-base transition-colors ${
@@ -105,9 +106,7 @@ function Legal() {
                 <p className="text-red-600 text-sm mt-1 dark:text-red-400">{error}</p>
               </div>
             ) : (
-              <div className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap text-sm leading-relaxed prose prose-sm max-w-none">
-                {activeTab === 'privacy' ? privacyText : termsText}
-              </div>
+              <LegalDocument text={activeTab === 'privacy' ? privacyText : termsText} />
             )}
           </div>
         </div>

@@ -15,6 +15,14 @@ function Legal() {
   const { isDark, toggle } = useTheme();
 
   useEffect(() => {
+    const previous = document.title;
+    document.title = 'Privacy Policy & Terms of Service | Wiggle';
+    return () => {
+      document.title = previous;
+    };
+  }, []);
+
+  useEffect(() => {
     const loadContent = async () => {
       try {
         setIsLoading(true);

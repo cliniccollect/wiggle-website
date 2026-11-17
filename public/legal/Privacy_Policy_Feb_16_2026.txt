@@ -1,0 +1,79 @@
+Wiggle Privacy Policy
+Last Updated: February 16, 2026
+
+
+This Privacy Policy governs how Wiggle Technology Inc., doing business as Wiggle (“Wiggle”), with its principal place of business at 1264 W 320 N, Provo, UT 84601, collects, uses, discloses, and protects personal information when you use the Wiggle point-of-sale and payment platform (the “Services”). This policy applies to veterinary clinics (“Clinic”) and their customers (“Customer” or “Customers”) who interact with the Services. By using the Services, Clinic and Customers agree to the terms of this Privacy Policy, which is incorporated into the Wiggle Terms of Service (the “TOS”).
+
+
+1. What We Collect
+Wiggle collects the following data to provide the Services:  
+- User Data (Clinic Staff): First name, last name, email, clinic name, role, permissions, default terminal assignments, profile pictures (Base64 encoded), Terms of Service acceptance (timestamp, version), Privacy Policy acceptance (timestamp, version), account creation timestamp.  
+- Customer Data: First name, last name, email, phone, physical address, account numbers (clinic-assigned), tokenized payment methods (last 4 digits only), payment invitation tokens, delivery preferences, transaction history.  
+- Transaction Data Transaction amounts (cash price, card price), payment method details (last 4 digits only, card type/network), transaction IDs, approval codes, batch IDs, processing fees, refund amounts, transaction notes (user and system-generated), processing and settlement timestamps, terminal information.  
+- Payment Method Storage: Type (card/bank account), nickname (user-defined), last 4 digits, card type, expiry month/year, default payment method designation, consent timestamp and IP address, last 4 digits for bank accounts.  
+- Clinic Settings: Clinic name, support email, phone, address, website, logo uploads, brand customization (colors, fonts).  
+- Treatment Plans/Estimates: Wiggle processes and may store uploaded treatment plans and extracted clinical data to provide the Services and improve its AI models.
+- Financial Records: Settlement data (date, volume, fees, refunds, net deposits), invoice records, recurring payment plan details.  
+
+
+We NEVER store: Full credit or debit card numbers (including CVV), social security numbers, human protected health information as defined in HIPAA, or any data entered into the “Notes” field that contains medical or card information (collectively, “Excluded Information”).
+
+
+For Pet Owners (Customers):  
+When you pay through a Wiggle payment link, SMS, or secure portal:  
+- We collect your name, email, phone, and payment method (tokenized — last 4 digits only).  
+- We use this to process your payment and send receipts.  
+- We do not store full card numbers.
+- SMS Opt-Out: Reply STOP to any text to unsubscribe.  
+
+
+Invoicing & Treatment Plan Uploads: Clinic may upload treatment plans for extraction, which may be done with AI. No Excluded Information is retained.
+
+
+2. How We Use Your Information
+Wiggle uses the collected data to:  
+- Process payments, send receipts, and manage invoices.  
+- Prevent fraud and help ensure compliance with Card Brand Rules.  
+- Improve the Services, including through AI and Aggregated Statistics.  
+- Provide customer support and respond to Clinic inquiries.  
+
+
+3. How We Share Your Information
+Wiggle shares data only as follows:  
+- With a PCI DSS Level 1 compliant payment processor for transaction handling (tokenized data only).  
+- With third-party vendors (e.g., email/SMS providers) under confidentiality obligations for invoice delivery, receipts, and reminders.  
+- With Clinic for transaction data and IP addresses (upon request for audit/dispute purposes).  
+- Aggregated Statistics (anonymized, never re-identified) for Wiggle’s business purposes.  
+- For legal compliance or business transfer (e.g., merger), if required by law or with notice.  
+
+
+We do not sell personal information or use it for marketing without consent.
+4. Security
+Wiggle implements reasonable security measures, including:  
+- Password hashing (not stored in plain text).  
+- Payment card and bank account tokenization.  
+- Secure session management.  
+- IP address logging for consent tracking.  
+Wiggle affirms that the payment processor is PCI DSS Level 1 compliant as of the date of Clinic’s signup. Full card data security is the responsibility of the payment processor.
+
+
+5. Your Rights
+Under applicable state laws (e.g., CCPA, CPA):  
+- Access/Delete: Clinic may request access to or deletion of its data by emailing support@wiggle.vet.  
+- No Sale: No opt-out needed (we don’t sell data).  
+- No Discrimination: No penalties for exercising rights.  
+Customers should contact Clinic directly for data requests.
+
+
+6. Changes to This Policy
+Wiggle may update this Privacy Policy at any time by posting the revised version at wiggle.vet/legal. Material changes will be communicated to Clinic via email or in-app notice at least thirty (30) days before the effective date. Clinic’s continued use of the Services after the effective date constitutes acceptance of the updated Policy. Updates will not apply retroactively to data practices that occurred before the update. If Clinic does not agree, it may terminate the TOS with thirty (30) days’ notice before the update takes effect.
+
+
+7. Contact Us
+For questions or requests, contact:  
+support@wiggle.vet  
+Wiggle   
+
+
+ACCEPTANCE 
+By using the Services, Clinic and Customers agree to this Privacy Policy.

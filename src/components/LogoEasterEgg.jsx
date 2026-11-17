@@ -1,13 +1,16 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 // Same logo animation as the Wiggle web app login screen
-// (apps/web4/src/components/logo-easter-egg.tsx), light mode only.
+// (apps/web4/src/components/logo-easter-egg.tsx).
 // A static solid blue logo. A click plays the dog drawing animation.
 // Every click plays it again.
 //
-// Files: put these two files in the website's public/ folder.
-const LOGO_ANIMATION = '/wiggle-logo-animation-light.mp4';
-const LOGO_DRAWN = '/wiggle-logo-drawn-light.png';
+// The static logo is one see-through image for light and dark mode.
+// The videos have a white (light) or black (dark) background, so they
+// blend with the page the same way the web app does.
+const LOGO_ANIMATION_LIGHT = '/wiggle-logo-animation-light.mp4';
+const LOGO_ANIMATION_DARK = '/wiggle-logo-animation-dark.mp4';
+const LOGO = '/wiggle-logo.png';
 
 // The video shows a 1640 x 902 drawing. The static image is the last frame
 // of that drawing, in the same box. In the drawing, the word is
@@ -30,7 +33,7 @@ function prefersReducedMotion() {
   );
 }
 
-export default function LogoEasterEgg({ height, drawHeight, drawOffsetY = 0, className = '' }) {
+export default function LogoEasterEgg({ height, drawHeight, drawOffsetY = 0, isDark = false, className = '' }) {
   const videoRef = useRef(null);
   const [armed, setArmed] = useState(false);
   const [phase, setPhase] = useState('static'); // static | drawing | growing | settling
@@ -147,11 +150,16 @@ export default function LogoEasterEgg({ height, drawHeight, drawOffsetY = 0, cla
         className="relative mx-auto block"
         style={{ width: `${Math.round(LOGO_W * k)}px`, height: `${height}px` }}
       >
-        <span aria-hidden="true" className="pointer-events-none absolute mix-blend-multiply" style={artStyle}>
+        <span
+          aria-hidden="true"
+          className={`pointer-events-none absolute ${isDark ? 'mix-blend-screen' : 'mix-blend-multiply'}`}
+          style={artStyle}
+        >
           {armed ? (
             <video
+              key={isDark ? 'dark' : 'light'}
               ref={videoRef}
-              src={LOGO_ANIMATION}
+              src={isDark ? LOGO_ANIMATION_DARK : LOGO_ANIMATION_LIGHT}
               muted
               playsInline
               preload="auto"
@@ -160,7 +168,7 @@ export default function LogoEasterEgg({ height, drawHeight, drawOffsetY = 0, cla
             />
           ) : null}
           <img
-            src={LOGO_DRAWN}
+            src={LOGO}
             alt=""
             className={`absolute inset-0 block h-full w-full ${showStatic ? 'opacity-100' : 'opacity-0'}`}
             style={{ transition: phase === 'settling' ? `opacity ${SETTLE_MS}ms linear` : 'none' }}

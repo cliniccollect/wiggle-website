@@ -45,7 +45,7 @@ function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden flex flex-col font-sofia">
-      {loading ? <LoadingBar /> : null}
+      <LoadingBar active={loading} />
       <GlowBackdrop isDark={isDark} />
 
       <div className="relative w-full px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between">

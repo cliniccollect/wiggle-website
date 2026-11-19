@@ -47,7 +47,7 @@ function Legal() {
 
   return (
     <div className="relative min-h-screen font-sofia flex flex-col">
-      {isLoading ? <LoadingBar /> : null}
+      <LoadingBar active={isLoading} />
       <div className="absolute left-4 top-4 z-10 sm:left-6 sm:top-6">
         <ThemeToggle isDark={isDark} onToggle={toggle} />
       </div>

@@ -11,3 +11,45 @@ html {
 html.dark {
   background-color: hsl(0, 0%, 7%);
 }
+
+/*
+ * Loading bar (components/LoadingBar.tsx), same as the web app.
+ * Fills left to right: fast at first, then slower, stopping at 90%.
+ * After 2 seconds it also pulses softly. When the load ends it fills to the
+ * end and fades out.
+ */
+@keyframes loading-bar-grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes loading-bar-pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading-bar-fill {
+  width: 90%;
+  animation:
+    loading-bar-grow 8s cubic-bezier(0.08, 0.7, 0.2, 1) forwards,
+    loading-bar-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) 2s infinite;
+}
+
+.loading-bar-finish {
+  width: 100%;
+  opacity: 0;
+  transition:
+    width 0.2s ease-out,
+    opacity 0.25s ease 0.2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-bar-fill {
+    animation: loading-bar-grow 8s cubic-bezier(0.08, 0.7, 0.2, 1) forwards;
+  }
+}
